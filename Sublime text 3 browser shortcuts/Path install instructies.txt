@@ -1,0 +1,5 @@
+pak een build die je wilt, drop hem in het path below
+
+C:\Users\svnoo\AppData\Roaming\Sublime Text 3\Packages\User\chrome of firefox build drop je hier
+
+ga naar het dropdown menu "tools" in sublime text, ga naar build system en selecteer chrome of firefox
