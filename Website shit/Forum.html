@@ -3,11 +3,22 @@
 <HEAD>
 	<meta charset="utf-8"/>
 	<title>Kluslus forum</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="Forum.css"
 </HEAD>
-<BODY>
-	<HEADER>
+<BODY> 
+	<DIV id="vanalles">
+   
+        
+
+	<HEADER id ="topheader">
 		<H1>KLUSLUS FORUM<H1>
+			<DIV id="search"> 
+        <form method="post" action=""> 
+            <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
+            <input type="submit" value="Search" name="find" id="find" /></form> 
+             </DIV>
+		
+</FORM>
 	</HEADER>
 	<FORM action='login.php' method='POST'>
 		Username: <INPUT type='text' name='username'
@@ -16,7 +27,7 @@
 		placeholder='Password' />
 		<input type='submit' name='login' value='Log in' />
 	</FORM>
-	<NAV></NAV>
+	<NAV id= "topbar" >
 		<UL>
 			<LI>Home</LI>
 			<LI>Chat</LI>
@@ -29,7 +40,27 @@
 
 			<UL>
 	</NAV>
-	<SECTION>
+	<SECTION id= "mainsectie" >
+		<ARTICLE>
+			<HEADER>
+				<HGROUP>
+					
+				</HGROUP>
+			</HEADER>
+			
+	
+	<FOOTER>
+		<p> Laatste post: </p>
+		<p> Laatst geregistreerd: </p>
+		<p> Gebruikers online:</p>
+	</FOOTER>
+	</ARTICLE>
 	</SECTION>
+	<ASIDE id="sidebar" >
+
+	</ASIDE>
+	<FOOTER id="defooter" >
+	</FOOTER>
+</DIV>
 </BODY>
 </HTML>
