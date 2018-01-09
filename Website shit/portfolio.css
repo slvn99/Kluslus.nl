@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+header, section, footer, aside, article, nav{
+	display:block;
+}
+
+body{
+	text-align:center;
+}
+
+#wrapper{
+	border: 1px solid black;
+	width: 1500px;
+	margin: 20px auto;
+	text-align:left;
+}
+
+#top_header{
+	background:orange;
+	border:1px solid black;
+	padding: 20px;
+}
+
+
+#navigatiebalk{
+	background:red;
+	border: 1px solid black;
+	padding:10px;
+}
+
+#navigatiebalk li{
+	display:inline-block;
+	list-style:none;
+	padding:2px;
+	font:bold 14px Tahoma;
+}
