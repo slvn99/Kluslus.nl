@@ -1,4 +1,5 @@
-#title{
-	font-size: 100px;
-	color: purple;
-}
+p:nth-child(odd){color:green;}
+p:nth-child(even){color:red;}
+<!--dit is een comment-->
+<!--p is gewoon iets wat er voor zorgt dat alleen p's geselecteerd worden (p van paragraph)-->
+
