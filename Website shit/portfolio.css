@@ -35,6 +35,13 @@ body{
 #navigatiebalk li{
 	display:inline-block;
 	list-style:none;
-	padding:2px;
+	padding:7px;
 	font:bold 14px Tahoma;
+}
+
+#mainsection{
+
+	float left;
+	width:660px;
+	margin:30px;
 }
