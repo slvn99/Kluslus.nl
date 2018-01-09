@@ -1,7 +1,7 @@
 p:nth-child(odd){color:green;}
 p:nth-child(even){color:red;}
-<!--dit is een comment-->
-<!--p is gewoon iets wat er voor zorgt dat alleen p's geselecteerd worden (p van paragraph)-->
+/*dit is een comment*/
+/*p is gewoon iets wat er voor zorgt dat alleen p's geselecteerd worden (p van paragraph)*/
 
 *{
 	margin: 0px;
@@ -17,13 +17,17 @@ header, section, footer, aside, nav, article, hgroup{
 	display:block;
 }
 body{
-	text-align:center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 #alles{
 	border: 1px solid black;
-	width: 1300px;
-	margin: 20px auto;
-	text-align: left;
+	max-width: 1300px;
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
 }
 #top_header{
 	background: orange;
@@ -39,4 +43,39 @@ body{
 	list-style: none;
 	padding: 5px;
 	font: bold 14px Tahoma;
+}
+#updating_news{
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+}
+#main_section{
+	width: 850px
+	margin: 15px; /* 900 px, nog 400px over*/
+	padding: 10px;
+	flex: 1 1 auto;
+}
+#the_feed{
+	border: 1px solid red;
+	float: right;
+	width: 350px;
+	margin: 10px;
+	padding: 10px;
+	background: #ffa500;
+	flex: 1 1 350;
+}
+#the_footer{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid orange;
+}
+article{
+	background: #fffbcc;
+	border: 1px solid red;
+	padding: 20px;
+	
+}
+article footer{
+	text-align: right;
 }
