@@ -30,19 +30,26 @@ body{
 	flex: 1 1 auto;
 }
 #top_header{
-	background: orange;
+	background: linear-gradient(orange,yellow);
 	border: 1px solid blue;
 	padding: 20px;
 }
 #top_menu{
 	background: red;
 	color: black;
+	padding:6px;
 }
 #top_menu li{
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
+	display: inline-flex;
+	list-style-type: none;
+	padding:5px 12px;
 	font: bold 14px Tahoma;
+	background:#ffa500;
+	border-radius: 10px;
+	transition:background 1s;
+}
+#top_menu li:hover{
+	background:yellow;	
 }
 #updating_news{
 	display: flex;
@@ -62,6 +69,7 @@ body{
 	margin: 10px;
 	padding: 10px;
 	background: #ffa500;
+	border-radius: 5px;
 }
 #the_footer{
 	clear: both;
@@ -73,6 +81,7 @@ article{
 	background: #fffbcc;
 	border: 1px solid red;
 	padding: 20px;
+	border-radius: 5px;
 	
 }
 article footer{
