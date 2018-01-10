@@ -10,15 +10,27 @@ header, section, footer, aside, article, nav{
 
 body{
 	text-align:center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex 1;
+	width: 100%;
+}
+article{
+	margin-bottom:15px;
 }
 
 #wrapper{
-	border: 1px solid black;
-	width: 1500px;
-	height: 750px;
+	border: 1px solid green;
+
+	display:flex;
+	flex:1 1 auto;
 	margin: 20px auto;
 	text-align:left;
+	flex-direction: column;
+	max-width: 1000px;
 }
+
 
 #top_header{
 	background:orange;
@@ -38,41 +50,43 @@ body{
 	padding:7px;
 	font:bold 14px Tahoma;
 }
+#updatingnews{
+	display:flex;
+	flex-direction:row;
+	flex: 1 1 auto;
+
+}
+
 
 #mainsection{
-
-	float left;
-	width:50px;
+	
+	flex: 1 1 auto;
+	
 	
 }
 
 #portfolio{
 	display:block;
-	width: 1200px;
+	
 }
 
 
 
 #info{
-	margin-top: 1px;
+	
 	border: 2px solid red;
 }
 #naamportfolio{
 	margin-bottom: 5px;
 }
-#mainfooter{
-	
-	font: 25px bold Tahoma;
-	clear:both;
-	text-align: center;
-	border:1px solid black;
 
-}
+
 
 #sidebar{
 	float:right;
 	background-color:orange;
 	border:solid black 1px;
+	margin-left: 5px;
 	width: 300px;
 	height: 500px;
 }
@@ -85,9 +99,18 @@ body{
 
 }
 #oordeelgebruiker{
-	width: 200px;
+	
 }
 #totalrating{
 	text-align:right;
 
+}
+
+
+#mainfooter{
+	
+	font: 25px bold Tahoma;
+	clear:both;
+	text-align: center;
+	border-top:1px solid black;
 }
