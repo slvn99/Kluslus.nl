@@ -1,0 +1,93 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+header, section, footer, aside, article, nav{
+	display:block;
+}
+
+body{
+	text-align:center;
+}
+
+#wrapper{
+	border: 1px solid black;
+	width: 1500px;
+	height: 750px;
+	margin: 20px auto;
+	text-align:left;
+}
+
+#top_header{
+	background:orange;
+	border:1px solid black;
+	padding: 20px;
+}
+
+
+#navigatiebalk{
+	background:red;
+	border: 1px solid black;
+	}
+
+#navigatiebalk li{
+	display:inline-block;
+	list-style:none;
+	padding:7px;
+	font:bold 14px Tahoma;
+}
+
+#mainsection{
+
+	float left;
+	width:50px;
+	
+}
+
+#portfolio{
+	display:block;
+	width: 1200px;
+}
+
+
+
+#info{
+	margin-top: 1px;
+	border: 2px solid red;
+}
+#naamportfolio{
+	margin-bottom: 5px;
+}
+#mainfooter{
+	
+	font: 25px bold Tahoma;
+	clear:both;
+	text-align: center;
+	border:1px solid black;
+
+}
+
+#sidebar{
+	float:right;
+	background-color:orange;
+	border:solid black 1px;
+	width: 300px;
+	height: 500px;
+}
+#beoordeling{
+	border: solid red 1px;
+	margin-top:5px;
+}
+#beoordeeltext{
+ 
+
+}
+#oordeelgebruiker{
+	width: 200px;
+}
+#totalrating{
+	text-align:right;
+
+}
