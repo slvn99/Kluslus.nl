@@ -52,7 +52,12 @@ article{
 	list-style:none;
 	padding:7px;
 	font:bold 14px Tahoma;
+
 }
+#navigatiebalk li:hover{
+	text-decoration: underline;
+}
+
 #updatingnews{
 	display:flex;
 	flex-direction:row;
