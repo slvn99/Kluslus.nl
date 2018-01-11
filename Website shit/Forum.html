@@ -17,30 +17,32 @@
 	<HEADER id ="topheader">
 		<H1>KLUSLUS FORUM<H1>
 			<DIV id="search"> 
-        <form method="post" action=""> 
+        <FORM method="post" action=""> 
             <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
             <input type="submit" value="Search" name="find" id="find" /></form> 
              </DIV>
-		
-</FORM>
-	</HEADER>
-	<FORM action='login.php' method='POST'>
-		Username: <INPUT type='text' name='username'
+		</FORM>
+		<DIV id = "usepass">
+		<FORM action='login.php' method='POST'>
+		 <INPUT type='text' name='username'
 		placeholder='Username'/>
-		Password : <INPUT type='password' name='password'
+		 <INPUT type='password' name='password'
 		placeholder='Password' />
 		<input type='submit' name='login' value='Log in' />
 	</FORM>
+	</DIV>
+	</HEADER>
+	
 	<NAV id= "topbar" >
-		<UL id= "buttons" >
-			<LI>Home</LI>
-			<LI>Chat</LI>
-			<LI>Help</LI>
-			<LI>Zoeken</LI>
-			<LI>Profiel</LI>
-			<LI>Mijn berichten</LI>
-			<LI>Uitloggen</LI>
-			<LI>Members</LI>
+		<UL>
+			<LI><A href="#Home">Home</A></LI>
+			<LI><A href="#chat">Chat</A></LI>	
+			<LI><A href="#help">Help</A></LI>
+			<LI><A href="#zoeken">Zoeken</A></LI>
+			<LI><A href="#profiel">Profiel</A></LI> 
+			<LI><A href="#mijnbericthen">Mijn berichten</A></LI>
+			<LI><A href="#uitloggen">Uitloggen</A></LI>
+			<LI><A href="#members">Members</A></LI>
 
 			<UL>
 	</NAV>
