@@ -4,8 +4,13 @@
 	<meta charset="utf-8"/>
 	<title>Kluslus forum</title>
 	<link rel="stylesheet" href="Forum.css"
+	
 </HEAD>
-<BODY> 
+<BODY>
+	
+	
+	
+
 	<DIV id="vanalles">
    
         
@@ -13,53 +18,78 @@
 	<HEADER id ="topheader">
 		<H1>KLUSLUS FORUM<H1>
 			<DIV id="search"> 
-        <form method="post" action=""> 
+        <FORM method="post" action=""> 
             <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
             <input type="submit" value="Search" name="find" id="find" /></form> 
              </DIV>
-		
-</FORM>
-	</HEADER>
-	<FORM action='login.php' method='POST'>
-		Username: <INPUT type='text' name='username'
+		</FORM>
+		<DIV id = "usepass">
+		<FORM action='login.php' method='POST'>
+		 <INPUT type='text' name='username'
 		placeholder='Username'/>
-		Password : <INPUT type='password' name='password'
+		 <INPUT type='password' name='password'
 		placeholder='Password' />
 		<input type='submit' name='login' value='Log in' />
 	</FORM>
+	</DIV>
+	</HEADER>
+	
 	<NAV id= "topbar" >
 		<UL>
-			<LI>Home</LI>
-			<LI>Chat</LI>
-			<LI>Help</LI>
-			<LI>Zoeken</LI>
-			<LI>Profiel</LI>
-			<LI>Mijn berichten</LI>
-			<LI>Uitloggen</LI>
-			<LI>Members</LI>
+			<LI><A class="active" href="#home">Home</A></LI>
+			<LI><A href="#chat">Chat</A></LI>	
+			<LI><A href="#help">Help</A></LI>
+			<LI><A href="#zoeken">Zoeken</A></LI>
+			<LI><A href="#profiel">Profiel</A></LI> 
+			<LI><A href="#mijnbericthen">Mijn berichten</A></LI>
+			<LI><A href="#uitloggen">Uitloggen</A></LI>
+			<LI><A href="#members">Members</A></LI>
 
 			<UL>
 	</NAV>
+	<DIV id=newdiv>
 	<SECTION id= "mainsectie" >
 		<ARTICLE>
 			<HEADER>
-				<HGROUP>
-					
-				</HGROUP>
+				<H1>Kluslus</H1>
 			</HEADER>
-			
-	
-	<FOOTER>
-		<p> Laatste post: </p>
-		<p> Laatst geregistreerd: </p>
-		<p> Gebruikers online:</p>
-	</FOOTER>
-	</ARTICLE>
-	</SECTION>
-	<ASIDE id="sidebar" >
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#algemeneDiscussie">Algemene Discussie</A></P> 
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#aankondigingen">Aankondigingen</A></P>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#tutorials">Tutorials</A></P>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#suggesties">Suggesties</A></P>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#technischeproblemen">Technische Problemen</A></P>
+		</ARTICLE>
+		<ARTICLE>
+		<HEADER>
+			<H1 id="onlyofftopic">Off topic</H1>
+		</HEADER>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#offtopic">Off topic</A></P>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#games">Games</A></P}>
+		</ARTICLE>
+		<ARTICLE>
+			<P><A href="#spam">Spam</A></P>
+		</ARTICLE>
 
-	</ASIDE>
+	</SECTION>
+	</DIV>
 	<FOOTER id="defooter" >
+		<P> Laatste post: </P>
+		<P> Laatst geregistreerd: </P>
+		<P> Gebruikers online:</P>
 	</FOOTER>
 </DIV>
 </BODY>

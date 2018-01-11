@@ -14,43 +14,60 @@ h2{
 	font: bold 14px Tahoma;
 }
 header, section, footer, aside, nav, article, hgroup{display:block;}
+header{
+	width: 25%;
+	justify-content:center;
+}
 body{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	margin: 0;
 }
+#top_menu{
+	width: 100%;
+	position: fixed;
+	margin-top: 0px;
+	opacity: 1;
+	height: 48px;
+	text-align: center;
+	background-color: rgba(15,15,15,0.80);
+}
+#top_menu li a{
+	background-attachment: scroll;
+	padding:15px 10px;
+	display:block;
+	text-align: center;
+	color:#fff;
+	font: bold 14px Tahoma;
+	text-decoration: none;
+	box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
+	transition:background 1s;
+}
+#top_menu ul{
+	display: inline-block;
+	list-style-type: none;
+	overflow:hidden;
+}
+#logo{
+	text-align: center;
+	padding: 50%;
+}
+#top_menu li{float:left;}
+#top_menu li a.active{background-color: red;}
+#top_menu li a:hover:not(.active){background-color:yellow;	}
+
 #alles{
-	border: 1px solid black;
+	border-bottom: 1px solid black;
 	max-width: 100%;
 	margin: 0px 0px;
+	padding-top: 100px;
+	padding-left: 5%;
+	padding-right: 5%;
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
 }
-#top_header{
-	background: linear-gradient(orange,yellow);
-	padding: 20px;
-}
-#top_menu{
-	background: orange;
-	color: black;
-}
-#top_menu ul{
-	list-style-type: none;
-}
-#top_menu li{float:left;}
-#top_menu li a{
-	padding:10px;
-	display:block;
-	text-align: center;
-	color:#000;
-	font: bold 14px Tahoma;
-	text-decoration: none;
-	transition:background 1s;
-}
-#top_menu li a.active{background-color: red;}
-#top_menu li a:hover:not(.active){background-color:yellow;	}
 
 #updating_news{
 	display: flex;
@@ -58,27 +75,25 @@ body{
 	flex: 1 1 auto;
 }
 #main_section{
-	width: 850px
-	margin: 15px; /* 900 px, nog 400px over*/
-	padding: 10px;
+	width: 850px;
+	margin: 0px; /* 900 px, nog 400px over*/
+	padding: 0px;
 	flex: 1 1 auto;
 }
 #main_section article{
 	background: #fffbcc;
 	border: 1px solid red;
 	padding: 20px;
-	border-radius: 5px;
-	
+	border-radius: 5px;	
 }
-#main_section article footer{
-	text-align: right;
-}
+#main_section article footer{text-align: right;}
 #the_feed{
 	border: 1px solid red;
 	width: 250px;
 	height: 400px;
-	margin: 10px;
-	padding: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
 	background: #ffa500;
 	border-radius: 5px;
 }
