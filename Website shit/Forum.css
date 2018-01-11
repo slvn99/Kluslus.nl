@@ -58,15 +58,15 @@ box-shadow: 0 6px #999;
 	font-size: 16px;
 }
 
-#buttons: LI:hover 
+
 
 
 #mainsektie {
 	float: left;
 	width: 630px;
 	margin:30px; 
- 
 }
+
 #search {
 	float: right;
 }
@@ -100,5 +100,20 @@ article{
 }
 #usepass{
 	position:relative;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 }
