@@ -1,0 +1,150 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+header, section, footer, aside, article, nav{
+	display:block;
+}
+
+body{
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+	width: 100%;
+}
+article{
+	
+	background:#fffbcc;
+}
+
+#wrapper{
+	
+
+	display:flex;
+	flex:1;
+	margin: 20px auto;
+	text-align:left;
+	flex-direction: column;
+	max-width: 1000px;
+}
+
+
+#top_header{
+	background:orange;
+	border:1px solid black;
+	padding: 20px;
+}
+
+
+#navigatiebalk{
+	background:red;
+	border: 1px solid black;
+	display:inline-flex;
+	flex-direction:row;
+	}
+
+#navigatiebalk li{
+	display:inline-block;
+	list-style:none;
+	padding:7px;
+	font:bold 14px Tahoma;
+
+}
+#navigatiebalk li:hover{
+	text-decoration: underline;
+}
+
+#updatingnews{
+	display:flex;
+	flex-direction:row;
+	flex: 1;
+}
+
+
+#mainsection{
+	
+	
+
+	
+	
+}
+
+#portfolio{
+	display:block;
+	border: 1px solid red;
+	margin: 10px;
+	border-radius:5px;
+	padding: 15px;
+	box-shadow: 5px 5px;
+}
+
+
+
+#info{
+	
+
+
+
+	
+}
+#naamportfolio{
+	
+}
+
+
+
+#sidebar{
+	float:right;
+	background-color:orange;
+	border:solid black 1px;
+	margin-left: 5px;
+	width: 300px;
+	height: 500px;
+}
+#beoordeling{
+	border: solid red 1px;
+	border-radius: 5px;
+	margin-top: 200PX;
+	padding: 15px;
+	box-shadow: 5px 5px;
+
+	
+}
+#beoordeeltext{
+ 
+
+}
+#oordeelgebruiker{
+	
+}
+#totalrating{
+	text-align:right;
+
+}
+
+
+#mainfooter{
+	font: 25px bold Tahoma;
+	clear:both;
+	text-align: center;
+	border-top:1px solid black;
+}
+#submitbutton{
+	border:1px solid #1f2f47;
+	background-color: #2e466e;
+	border-radius: 17px;
+	color:#ffffff;
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	text-shadow:0px 1px 0px #263666;
+	height: 40px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+
+}
