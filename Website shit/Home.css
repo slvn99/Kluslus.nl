@@ -13,61 +13,72 @@ h1{
 h2{
 	font: bold 14px Tahoma;
 }
-header, section, footer, aside, nav, article, hgroup{display:block;}
-header{
-	width: 25%;
-	justify-content:center;
-}
+section, footer, aside, nav, article, hgroup{display:block;}
 body{
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 0;
+	text-rendering: optimizeLegibility;
+	overflow: auto;
 }
-#top_menu{
-	width: 100%;
-	position: fixed;
-	margin-top: 0px;
-	opacity: 1;
-	height: 48px;
-	text-align: center;
-	background-color: rgba(15,15,15,0.80);
-}
-#top_menu li a{
-	background-attachment: scroll;
-	padding:15px 10px;
-	display:block;
-	text-align: center;
-	color:#fff;
-	font: bold 14px Tahoma;
-	text-decoration: none;
-	box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
-	transition:background 1s;
-}
-#top_menu ul{
-	display: inline-block;
-	list-style-type: none;
-	overflow:hidden;
-}
-#logo{
-	text-align: center;
-	padding: 50%;
-}
-#top_menu li{float:left;}
-#top_menu li a.active{background-color: red;}
-#top_menu li a:hover:not(.active){background-color:yellow;	}
 
 #alles{
 	border-bottom: 1px solid black;
 	max-width: 100%;
 	margin: 0px 0px;
-	padding-top: 100px;
+	padding-top: 40px;
 	padding-left: 5%;
 	padding-right: 5%;
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
 }
+
+header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(15,15,15,0.80);
+}
+	header > nav{
+		
+		flex: 1;
+		transform: 300ms all ease;
+	}
+		header nav > ul{ 
+			list-style-type: none;
+			padding-left: 15% /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
+		 }
+			header nav > ul > li{
+				float: left;
+				width: auto;
+				box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
+				border-bottom: 1px dotted rgba(0,0,0,.1);
+				position: relative;
+			}
+				header nav > ul > li > a{
+					display: block;
+					color: rgba(255,255,255,.65);
+					font-weight: 700;
+					padding: 1rem 1.5rem;
+					text-decoration: none;
+					transition: background 1s;
+					color:#fff;
+					font: bold 14px Tahoma;
+				}
+@media screen and (max-width: 800px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
+	header nav > ul > li{width:120px; float: none; background-color:rgba(15,15,15,0.80);}
+	header nav > ul{padding-left: 0;}
+	header{background: white;}
+	#alles{
+		padding-top: 0;
+		padding-left: 150px;
+		padding-right: 2.5%;
+	 }
+}
+header nav > ul > li > a.active{background-color: red;}
+header nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 #updating_news{
 	display: flex;
@@ -76,9 +87,8 @@ body{
 }
 #main_section{
 	width: 850px;
-	margin: 0px; /* 900 px, nog 400px over*/
+	margin: 0px; 
 	padding: 0px;
-	flex: 1 1 auto;
 }
 #main_section article{
 	background: #fffbcc;
