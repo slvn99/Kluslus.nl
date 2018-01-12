@@ -2,8 +2,6 @@
 	margin: 0px;
 	padding: 0px;
 }
-
-
 header, section, footer, aside, article, nav{
 	display:block;
 }
@@ -68,12 +66,7 @@ li:hover{
 }
 
 
-#mainsection{
-	
-	
-
-	
-	
+#mainsection{	
 }
 
 #portfolio{
@@ -94,18 +87,11 @@ li:hover{
 	float:left;
 }
 
-#info{
-	
-
-
-
-	
+#info{	
 }
 #naamportfolio{
 	
 }
-
-
 
 #sidebar{
 	float:right;
@@ -118,7 +104,7 @@ li:hover{
 #beoordeling{
 	border: solid red 1px;
 	border-radius: 5px;
-	margin-top: 200PX;
+	margin-top: 20PX;
 	padding: 15px;
 	box-shadow: 5px 5px;
 
