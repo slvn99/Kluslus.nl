@@ -85,6 +85,7 @@ nav{
 		display: block;
 		text-decoration: none;
 	}
+}
 
 nav > ul > li > a.active{background-color: red;}
 nav > ul > li > a:hover:not(.active){background-color:yellow;}
