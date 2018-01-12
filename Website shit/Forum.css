@@ -103,9 +103,9 @@ body {
 }
 .nav-item:focus ~  .nav-content {
 max-height:400px;
--webkit-transition:max-height 0,35s ease-in;
--moz-transition:max-height 0,35s ease-in;		
-transition:max-height 0,35s ease-in;	
+-webkit-transition:max-height 0,5s ease-in;
+-moz-transition:max-height 0,5s ease-in;		
+transition:max-height 0,5s ease-in;	
 }
 
 #buttons{
