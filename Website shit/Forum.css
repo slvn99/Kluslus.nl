@@ -1,12 +1,12 @@
 
-html{  background-color: #696969;
+html{  
 }
 *{
 	margin: 0px;
 	padding: 0px;
 }
 h1 {
-	font: bold 40px New Courier;
+	font: bold 40px Forum;
 }
 header, section, footer, aside, nav, article, hgroup {
 	display:block;
@@ -29,20 +29,21 @@ body {
 }	
 
 #topheader{
-	background: red;
-    border: 4px solid black;
+	background: grey;
+    	border: 4px solid black;
 	padding: 20px;
 	font-family:Forum;
+	text-align:center;
 }
 .content {
-	padding:30px;
+	padding:120px;
 }
 .nav-main {
-	width:1000px
-	background-color:#222;
 	height:70px;
 	font-size: 18px;
-	color:#FFF;
+	color:#fff;
+	border: 2px solid black;
+	
 	
 }
 .nav-main .logo {
@@ -118,6 +119,7 @@ transition:max-height 0,5s ease-in;
 	display:inline-block;
 	font-size: 16px;
 }
+.nav-main {background-color:#222;}
 
 
 
@@ -147,7 +149,7 @@ src: url("forum-regular.ttf");
 	-webkit-box-orient:vertical;
 }
 #mainsectie{
-	border:1px solid blue;
+	
 	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
