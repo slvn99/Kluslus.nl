@@ -23,7 +23,7 @@ body{
 	overflow: auto;
 }
 
-#alles/*behalve navbar*/{
+#wrapper/*behalve navbar*/{
 	border-bottom: 1px solid black;
 	max-width: 100%;
 	margin: 0px 0px;
@@ -34,9 +34,6 @@ body{
 	flex: 1 1 auto;
 }
 
-header{
-	
-}
 nav{
 	z-index: 99999;
 	display: flex;
@@ -92,7 +89,7 @@ nav{
 		text-decoration: none;
 	}
 	
-	#alles{
+	#wrapper{
 		padding-top: 0;
 		margin-left: 22%;
 		padding-right: 2.5%;
@@ -136,7 +133,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align: center;
 	padding: 0;
 	width: 1000px;
-	height: 150px;
+	height: 100px;
 	border: 2px solid green
 }
 #the_footer{
