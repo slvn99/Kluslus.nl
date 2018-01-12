@@ -16,14 +16,12 @@ body{
 	
 	width: 100%;
 }
+
 article{
-	
 	background:#fffbcc;
 }
 
 #wrapper{
-	
-
 	display:flex;
 	flex:1;
 	margin: 20px auto;
@@ -32,46 +30,64 @@ article{
 	max-width: 1000px;
 }
 
-
-#top_header{
-	background:orange;
-	border:1px solid black;
-	padding: 20px;
-}
-
-
-#navigatiebalk{
-	background:red;
-	border: 1px solid black;
-	display:inline-flex;
-	flex-direction:row;
+nav{
+	z-index: 99999;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(15,15,15,0.80);
+	position: sticky;
+	top: 0;
+	margin-bottom: 40px;
+	max-height: 51px;
+	max-width: 100%;
+	flex: 1;
+	transform: 300ms all ease;
+	}
+		nav > ul{ 
+			list-style-type: none;
+			padding-left: 15% /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
+		 }
+			nav > ul > li{
+				float: left;
+				width: auto;
+				box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
+				border-bottom: 1px dotted rgba(0,0,0,.1);
+				position: relative;
+			}
+				nav > ul > li > a{
+					display: block;
+					color: rgba(255,255,255,.65);
+					font-weight: 700;
+					padding: 1rem 1.5rem;
+					text-decoration: none;
+					transition: background 1s;
+					color:#fff;
+					font: bold 14px Tahoma;
+				}
+@media screen and (max-width: 800px) /*dit is het aantal pixels bij welke de navbar van vorm veranderd*/
+{
+	nav > ul{
+		height: 100%;
+		width: 120px;
+		padding-left: 0;
+		margin: 0;
+		padding:0;
+		position: fixed;
+		overflow:auto;
+		background-color: rgba(15,15,15,0.80);
+	}
+	nav > ul > li{
+		width:120px; 
+		float: none; 
+	}
+	nav > ul > li > a{
+		display: block;
+		text-decoration: none;
 	}
 
-#navigatiebalk li{
-	display:inline-block;
-	list-style:none;
-	padding:7px;
-	font:bold 14px Tahoma;
-
-}
-#navigatiebalk li:hover{
-	text-decoration: underline;
-}
-
-#updatingnews{
-	display:flex;
-	flex-direction:row;
-	flex: 1;
-}
-
-
-#mainsection{
-	
-	
-
-	
-	
-}
+nav > ul > li > a.active{background-color: red;}
+nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 #portfolio{
 	display:block;
@@ -82,20 +98,18 @@ article{
 	box-shadow: 5px 5px;
 }
 
+#updatingnews{
+	display:flex;
+	flex-direction:row;
+	flex: 1;
+}
 
 
-#info{
-	
-
-
-
-	
+#mainsection{text-align: right;}
+#info{	
 }
 #naamportfolio{
-	
 }
-
-
 
 #sidebar{
 	float:right;
@@ -111,22 +125,13 @@ article{
 	margin-top: 200PX;
 	padding: 15px;
 	box-shadow: 5px 5px;
-
-	
 }
 #beoordeeltext{
- 
-
 }
 #oordeelgebruiker{
 	
 }
-#totalrating{
-	text-align:right;
-
-}
-
-
+#totalrating{text-align:right;}
 #mainfooter{
 	font: 25px bold Tahoma;
 	clear:both;
@@ -145,6 +150,4 @@ article{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-
-
 }
