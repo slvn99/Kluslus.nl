@@ -167,7 +167,7 @@ article{
 	webkit-box-orient:horizontal;
 }
 #usepass{
-	position:relative;
+	position:right;
 }
 a:link {
     text-decoration: none;
@@ -183,5 +183,18 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+#square {
+	float:left;
+	width:32px;
+	height: 32px;
+	background: #D3D3D3;
+	position:relative;
+	margin-right:10px;
+	border-radius: 5px;
+}
+#textlinks{
+	text-align:left;
+	font-size:20px;
 }
 }
