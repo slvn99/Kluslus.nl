@@ -20,6 +20,10 @@ article{
 	
 	background:#fffbcc;
 }
+li:hover{
+	text-decoration: underline;
+
+}
 
 #wrapper{
 	
@@ -37,6 +41,7 @@ article{
 	background:orange;
 	border:1px solid black;
 	padding: 20px;
+	background-image:url("Resources/logotransparant.png");
 }
 
 
@@ -54,9 +59,7 @@ article{
 	font:bold 14px Tahoma;
 
 }
-#navigatiebalk li:hover{
-	text-decoration: underline;
-}
+
 
 #updatingnews{
 	display:flex;
@@ -80,9 +83,16 @@ article{
 	border-radius:5px;
 	padding: 15px;
 	box-shadow: 5px 5px;
+	text-align:left;
 }
 
-
+#imagebox{
+	height: 120px;
+	width: 100px;
+	border: solid green 1px;
+	background-image: url("Resources/profiletest.jpg");
+	float:left;
+}
 
 #info{
 	
@@ -133,4 +143,6 @@ article{
 	clear:both;
 	text-align: center;
 	border-top:1px solid black;
+	display:inline-flex;
+	list-style:none;
 }
