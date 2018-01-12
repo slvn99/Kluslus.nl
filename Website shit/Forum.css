@@ -1,12 +1,12 @@
 
-html{ background-color: #D3D3D3
+html{  
 }
 *{
 	margin: 0px;
 	padding: 0px;
 }
 h1 {
-	font: bold 40px New Courier;
+	font: bold 40px Forum;
 }
 header, section, footer, aside, nav, article, hgroup {
 	display:block;
@@ -29,26 +29,86 @@ body {
 }	
 
 #topheader{
-	background: red;
-    border: 4px solid black;
+	background: grey;
+    	border: 4px solid black;
 	padding: 20px;
 	font-family:Forum;
+	text-align:center;
 }
-#topbar li {
-display:inline-block;
-background:#B0C4DE;
-list-style: none;
-padding: 10px 20px;
-font-size: 20px;
-text-align: center;
-cursor: pointer;
-outline: none;
-color: #fff;
-border: none;
-border-radius: 15px;
-box-shadow: 0 6px #999;
-font-family:Forum;
+.content {
+	padding:120px;
 }
+.nav-main {
+	height:70px;
+	font-size: 18px;
+	color:#fff;
+	border: 2px solid black;
+	
+	
+}
+.nav-main .logo {
+	float:left;
+	height:40px;
+	padding:15px 30px;
+	font-size:1.4em;
+	line-height:40px;
+}
+.nav-main > ul {
+	margin:0;
+	padding:0;
+	float:left;
+	list-style-type:none;
+}
+.nav-main > ul > li {
+	float:left;
+}
+.nav-item {
+	display:inline-block;
+	padding:15px 20px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	text-decoration:none;
+}
+.nav-item:hover {
+	background-color:#444;
+}
+.nav-content{
+	position:absolute;
+	top:215px;
+	overflow:hidden;
+	background-color:#222;
+	max-height:0;
+}
+.nav-content a {
+	color:#fff;
+	text-decoration:none;
+}
+.nav-content a:hover {
+	text-decoration:underline;
+}
+.nav-sub{
+	padding:20px;
+}
+.nav-sub ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.nav-sub ul li a{
+	display:inline-block;
+	padding:5px 0;
+}
+.nav-item:focus {
+	background-color:#444;
+}
+.nav-item:focus ~  .nav-content {
+max-height:400px;
+-webkit-transition:max-height 0,5s ease-in;
+-moz-transition:max-height 0,5s ease-in;		
+transition:max-height 0,5s ease-in;	
+}
+
 #buttons{
 	float:left;
 	
@@ -59,6 +119,7 @@ font-family:Forum;
 	display:inline-block;
 	font-size: 16px;
 }
+.nav-main {background-color:#222;}
 
 
 
@@ -88,7 +149,7 @@ src: url("forum-regular.ttf");
 	-webkit-box-orient:vertical;
 }
 #mainsectie{
-	border:1px solid blue;
+	
 	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
