@@ -2,8 +2,25 @@
 	margin: 0px;
 	padding: 0px;
 }
-header, section, footer, aside, article, nav{
-	display:block;
+section, footer, aside, nav, article, hgroup{display:block;}
+body{
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+	overflow: auto;
+}
+
+#wrapper/*behalve navbar*/{
+	border-bottom: 1px solid black;
+	max-width: 100%;
+	margin: 0px 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
 }
 
 body{
@@ -18,21 +35,8 @@ article{
 	
 	background:#fffbcc;
 }
-li:hover{
-	text-decoration: underline;
 
-}
 
-#wrapper{
-	
-
-	display:flex;
-	flex:1;
-	margin: 20px auto;
-	text-align:left;
-	flex-direction: column;
-	max-width: 1000px;
-}
 
 
 #top_header{
@@ -43,20 +47,71 @@ li:hover{
 }
 
 
-#navigatiebalk{
-	background:red;
-	border: 1px solid black;
-	display:inline-flex;
-	flex-direction:row;
+nav{
+	z-index: 99999;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(15,15,15,0.80);
+	position: sticky;
+	top: 0;
+	margin-bottom: 40px;
+	max-height: 51px;
+	max-width: 100%;
+	flex: 1;
+	transform: 300ms all ease;
 	}
-
-#navigatiebalk li{
-	display:inline-block;
-	list-style:none;
-	padding:7px;
-	font:bold 14px Tahoma;
-
+		nav > ul{ 
+			list-style-type: none;
+			padding-left: 15% /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
+		 }
+			nav > ul > li{
+				float: left;
+				width: auto;
+				box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
+				border-bottom: 1px dotted rgba(0,0,0,.1);
+				position: relative;
+			}
+				nav > ul > li > a{
+					display: block;
+					color: rgba(255,255,255,.65);
+					font-weight: 700;
+					padding: 1rem 1.5rem;
+					text-decoration: none;
+					transition: background 1s;
+					color:#fff;
+					font: bold 14px Tahoma;
+				}
+@media screen and (max-width: 800px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
+	nav > ul{
+		height: 100%;
+		width: 120px;
+		padding-left: 0;
+		margin: 0;
+		padding:0;
+		position: fixed;
+		overflow:auto;
+		background-color: rgba(15,15,15,0.80);
+	}
+	nav > ul > li{
+		width:120px; 
+		float: none; 
+	}
+	nav > ul > li > a{
+		display: block;
+		text-decoration: none;
+	}
+	
+	#wrapper{
+		padding-top: 0;
+		margin-left: 22%;
+		padding-right: 2.5%;
+		float: center;
+	 }
 }
+nav > ul > li > a.active{background-color: red;}
+nav > ul > li > a:hover:not(.active){background-color:yellow;}
+
 
 
 #updatingnews{
@@ -125,10 +180,8 @@ li:hover{
 
 #mainfooter{
 	
-	font: 25px bold Tahoma;
-	clear:both;
+		clear: both;
 	text-align: center;
-	border-top:1px solid black;
-	display:inline-flex;
-	list-style:none;
+	padding: 20px;
+	border-top: 2px solid orange;
 }
