@@ -138,6 +138,8 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	
 }
 #ad_banner{
+	padding-top: 25px;
+	background: white;
 	margin:auto;
 	text-align: center;
 	padding: 0;
