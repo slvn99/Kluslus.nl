@@ -1,5 +1,5 @@
-p:nth-child(odd){color:green;}
-p:nth-child(even){color:red;}
+/*p:nth-child(odd){color:green;}*/
+/*p:nth-child(even){color:red;}*/
 /*dit is een comment*/
 /*p is gewoon iets wat er voor zorgt dat alleen p's geselecteerd worden (p van paragraph)*/
 
@@ -15,6 +15,7 @@ h2{
 }
 section, footer, aside, nav, article, hgroup{display:block;}
 body{
+	background: darkred;
 	height: auto !important;
 	height: 100%;
 	min-height: 100%;
@@ -27,8 +28,8 @@ body{
 	border-bottom: 1px solid black;
 	max-width: 100%;
 	margin: 0px 0px;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 60px;
+	padding-right: 60px;
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
@@ -69,10 +70,10 @@ nav{
 					color:#fff;
 					font: bold 14px Tahoma;
 				}
-@media screen and (max-width: 800px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
+@media screen and (max-width: 1080px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
 	nav > ul{
 		height: 100%;
-		width: 120px;
+		width: 100px;
 		padding-left: 0;
 		margin: 0;
 		padding:0;
@@ -81,36 +82,44 @@ nav{
 		background-color: rgba(15,15,15,0.80);
 	}
 	nav > ul > li{
-		width:120px; 
+		width:100px; 
 		float: none; 
 	}
 	nav > ul > li > a{
 		display: block;
 		text-decoration: none;
+		padding: 15px 0px;
 	}
 	
 	#wrapper{
 		padding-top: 0;
-		margin-left: 22%;
-		padding-right: 2.5%;
+		margin-left: 100px;
+		padding-right: 20px;
 		float: center;
 	 }
 }
 nav > ul > li > a.active{background-color: red;}
 nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
-#updating_news{display: flex;}
+#updating_news{
+	display: flex;
+	padding: 10px 30px;
+	background-color: rgba(15,15,15,0.95);
+}
 #main_section{
 	float: left;
-	width: 70%;
+	width: 80%;
 	margin: 0px; 
 	padding: 0px;
+	
 }
 #main_section article{
-	background: #fffbcc;
-	border: 1px solid red;
+	border: 1px groove white;
 	padding: 20px;
+	margin-bottom: 10px;
 	border-radius: 5px;	
+	box-shadow: rgba(0,0,0,1) 3px 1px 4px;
+	background: #757575;
 }
 #main_section article footer{text-align: right;}
 #the_feed{
