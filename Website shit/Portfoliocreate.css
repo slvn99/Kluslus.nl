@@ -152,3 +152,6 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	margin-right: auto;
 	text-align: center;
 }
+#submitbutton:hover{
+	text-decoration: underline;
+}
