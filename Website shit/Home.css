@@ -152,4 +152,8 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align: center;
 	padding: 20px;
 	border-top: 2px solid orange;
+	/*position: absolute;                    SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM ff note als je dit er bij zit dan zit de copyright text etc vast aan de onderkant als er nog niet genoeg content is, daarna beweegt ie mee
+	right: 0;                                Ik dacht ik het zet het ff in comment omdat je nog zo'n geel lijntje had bij je footer met je border top dus wist niet precies wat je daar mee wou doen
+    bottom: 0;
+    left: 0*/
 }

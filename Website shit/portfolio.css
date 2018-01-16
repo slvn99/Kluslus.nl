@@ -21,6 +21,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
+	background: linear-gradient(to bottom, #ffc578 0%,#fb9d23 100%);
 }
 
 body{
@@ -28,16 +29,12 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+	position: absolute;
 	width: 100%;
 }
 article{
-	
 	background:#fffbcc;
 }
-
-
-
 
 #top_header{
 	background:orange;
@@ -150,20 +147,19 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 #sidebar{
 	float:right;
-	background-color:orange;
+	background-color:silver;
 	border:solid black 1px;
 	margin-left: 5px;
 	width: 300px;
 	height: 500px;
 }
 #beoordeling{
+	float: center;
 	border: solid red 1px;
 	border-radius: 5px;
 	margin-top: 20PX;
 	padding: 15px;
 	box-shadow: 5px 5px;
-
-	
 }
 #beoordeeltext{
  
@@ -176,12 +172,13 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align:right;
 
 }
-
-
 #mainfooter{
-	
-		clear: both;
+	font: 25px bold Tahoma;
+	clear:both;
 	text-align: center;
-	padding: 20px;
-	border-top: 2px solid orange;
+	border-top:1px solid black;
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    left: 0
 }
