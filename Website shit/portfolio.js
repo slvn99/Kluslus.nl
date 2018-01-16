@@ -2,6 +2,9 @@ function SelectInput(){
 	document.querySelector('#submit').onclick=ValidateInput;
 	document.querySelector('#homeknop').onclick=ShowHome;
 	document.querySelector('#forumknop').onclick=ShowForum;
+	document.querySelector('#uitlogknop').onclick=LogOut;
+	document.querySelector('#mijnberichtenknop').onclick=ShowMessages;
+	document.querySelector('#profielknop').onclick=ShowProfile;
 }
 function ValidateInput(){
 	var x = document.getElementById('oordeelgebruiker').value;
@@ -15,10 +18,17 @@ console.log(x); //voor testen met chrome console.
 }
 
 function ShowForum(){	
-    window.location.replace("file:///C:/Users/Hidde/Documents/GitHub/Kluslus.nl/Website%20shit/forum.html");
-	}
+   
+}
 
 function ShowHome(){	
-    window.location.replace("file:///C:/Users/Hidde/Documents/GitHub/Kluslus.nl/Website%20shit/home.html");
-	}
+
+}
+function LogOut{
+
+}	
+
+Function ShowMessages(){
+
+}
 window.onload=SelectInput; // voer deze functie uit wanneer de pagina geladen word.
