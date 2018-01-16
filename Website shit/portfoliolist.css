@@ -36,14 +36,6 @@ article{
 	background:#fffbcc;
 }
 
-#top_header{
-	background:orange;
-	border:1px solid black;
-	padding: 20px;
-	background-image:url("Resources/logotransparant.png");
-}
-
-
 nav{
 	z-index: 99999;
 	display: flex;
@@ -115,36 +107,30 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	padding: 10px 30px;
 }
 
-#mainsection{
-	float: left;
-	width: 80%;
-	margin: 0px; 
-	padding: 0px;	
+#Portfoliolist{
+	font: 70px bold Tahoma;
+}
+ 
+.Nummer{
+ 	border-top: 1px solid black;
+ 	padding: 20px;
+ 	background: #ececec;
+}
+#Nummer_een{
+
 }
 
-#portfolio{
-	display:block;
-	border: 1px solid red;
-	margin: 10px;
-	border-radius:5px;
-	padding: 15px;
-	box-shadow: 5px 5px;
-	text-align:left;
+#Nummer_twee{
+
 }
 
-#beoordeling{
-	float: center;
-	border: solid red 1px;
-	border-radius: 5px;
-	margin-top: 20PX;
-	padding: 15px;
-	box-shadow: 5px 5px;
+#Nummer_drie{
+	
 }
 
-#totalrating{
-	text-align:right;
+#Nummer_vier{
+	
 }
-
 #sidebar{
 	position: relative;
 	float: right;
