@@ -9,7 +9,7 @@ body{
 	min-height: 100%;
 	width: 100%;
 	text-rendering: optimizeLegibility;
-	overflow: auto;
+	background: darkred;
 }
 
 #wrapper/*behalve navbar*/{
@@ -21,6 +21,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
+	overflow: hidden;
 }
 
 body{
@@ -28,16 +29,12 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+	position: absolute;
 	width: 100%;
 }
 article{
-	
 	background:#fffbcc;
 }
-
-
-
 
 #top_header{
 	background:orange;
@@ -82,10 +79,10 @@ nav{
 					color:#fff;
 					font: bold 14px Tahoma;
 				}
-@media screen and (max-width: 800px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
+@media screen and (max-width: 1080px)/*dit is het aantal pixels bij welke de navbar van vorm veranderd*/{
 	nav > ul{
 		height: 100%;
-		width: 120px;
+		width: 100px;
 		padding-left: 0;
 		margin: 0;
 		padding:0;
@@ -94,34 +91,35 @@ nav{
 		background-color: rgba(15,15,15,0.80);
 	}
 	nav > ul > li{
-		width:120px; 
+		width:100px; 
 		float: none; 
 	}
 	nav > ul > li > a{
 		display: block;
 		text-decoration: none;
+		padding: 15px 0px;
 	}
 	
 	#wrapper{
 		padding-top: 0;
-		margin-left: 22%;
-		padding-right: 2.5%;
+		margin-left: 100px;
+		padding-right: 20px;
 		float: center;
 	 }
 }
 nav > ul > li > a.active{background-color: red;}
 nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
-
-
 #updatingnews{
 	display:flex;
-	flex-direction:row;
-	flex: 1;
+	padding: 10px 30px;
 }
 
-
-#mainsection{	
+#mainsection{
+	float: left;
+	width: 80%;
+	margin: 0px; 
+	padding: 0px;	
 }
 
 #portfolio{
@@ -134,54 +132,40 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align:left;
 }
 
-#imagebox{
-	height: 120px;
-	width: 100px;
-	border: solid green 1px;
-	background-image: url("Resources/profiletest.jpg");
-	float:left;
-}
-
-#info{	
-}
-#naamportfolio{
-	
-}
-
-#sidebar{
-	float:right;
-	background-color:orange;
-	border:solid black 1px;
-	margin-left: 5px;
-	width: 300px;
-	height: 500px;
-}
 #beoordeling{
+	float: center;
 	border: solid red 1px;
 	border-radius: 5px;
 	margin-top: 20PX;
 	padding: 15px;
 	box-shadow: 5px 5px;
+}
 
-	
-}
-#beoordeeltext{
- 
-
-}
-#oordeelgebruiker{
-	
-}
 #totalrating{
 	text-align:right;
-
 }
 
+#sidebar{
+	position: relative;
+	float: right;
+	background-color:silver;
+	border: 1px solid black;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	flex: 0 0 auto;
+	width: 300px;
+	height: 500px;
+}
 
 #mainfooter{
-	
-		clear: both;
+	font: 25px bold Tahoma;
+	clear:both;
 	text-align: center;
-	padding: 20px;
-	border-top: 2px solid orange;
+	border-top:1px solid black;
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    left: 0
 }
