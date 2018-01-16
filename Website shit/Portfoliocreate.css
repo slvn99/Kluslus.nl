@@ -114,6 +114,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	padding: 15px;
 	box-shadow: 5px 5px;
 }
+
 #submitbutton{
 	border:1px solid #1f2f47;
 	background-color: #2e466e;
@@ -127,6 +128,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	margin-right: auto;
 	text-align: center;
 }
+
 #submitbutton:hover{
 	text-decoration: underline;
 }
@@ -137,7 +139,6 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	flex: 1;
 }
 
-
 #mainsection{text-align: right;}
 #info{	
 }
@@ -146,7 +147,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 #sidebar{
 	float:right;
-	background: linear-gradient(to bottom, #ffc578 0%,#fb9d23 100%);
+	background: silver;
 	border:solid black 1px;
 	margin-left: 5px;
 	width: 300px;
@@ -155,19 +156,6 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	background-repeat: no-repeat;
 	font: 25px bold Tahoma;
 }
-#beoordeling{
-	border: solid red 1px;
-	border-radius: 5px;
-	margin-top: 200PX;
-	padding: 15px;
-	box-shadow: 5px 5px;
-}
-#beoordeeltext{
-}
-#oordeelgebruiker{
-	
-}
-#totalrating{text-align:right;}
 #mainfooter{
 	font: 25px bold Tahoma;
 	clear:both;
