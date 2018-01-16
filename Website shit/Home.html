@@ -6,10 +6,28 @@
 	<meta name="viewport" content="initial-scale=1" />
 	<TITLE>Kluslus.nl</TITLE>
 	<LINK rel="stylesheet" href="Home.css">
+<SCRIPT>
+	function startTime() {
+   	 var today = new Date();
+    	var h = today.getHours();
+    	var m = today.getMinutes();
+    	var s = today.getSeconds();
+    	m = checkTime(m);
+    	s = checkTime(s);
+    	document.getElementById('txt').innerHTML =
+   	 h + ":" + m + ":" + s;
+    	var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</SCRIPT>
 </HEAD>
 
 
-<BODY>	
+<BODY onload="startTime()">
+<div id = "txt"></div>	
 	<NAV>
 		<UL>			
 			<LI><A class="active" href="#home">Home</A></LI>
