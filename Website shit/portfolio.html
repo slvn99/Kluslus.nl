@@ -6,67 +6,63 @@
     <script src="portfolio.js"></script>
     <link rel="stylesheet" href="portfolio.css">
 </HEAD>
+
 <BODY>
-	<DIV id="wrapper">
-	<HEADER ID="top_header">
-		<H1 name ="test">Mijn Portfolio</H1>
-
-	
-	</HEADER>
-
 	<NAV>
 		<UL>			
-			<LI><A class="active" href="#home">Home</A></LI>
-			<LI><A href="#portfolio">Portfolio's</A></LI>
-			<LI><A href="#forum">Forum</A></LI>
-			<LI><A href="#mijn_berichten">Mijn berichten</A></LI>
-			<LI><A href="#profiel">Profiel</A></LI>
-			<LI><A href="#uitloggen">Uitloggen</A></LI>
+
+
+			<LI ID="homeknop"><A class="active" href="home.html">Home</A></LI>
+			<LI ID= "mijnportfolioknop"><A href="portfolio.html">Portfolio's</A></LI>
+			<LI ID="forumknop"><A href="forum.html">Forum</A></LI>
+			<LI ID="mijnberichtenknop"><A href="mijn_berichten.html">Mijn berichten</A></LI>
+			<LI ID="profielknop"><A href="profiel.html">Profiel</A></LI>
+			<LI ID="uitlogknop"><A href="#uitloggen">Uitloggen</A></LI> <!--dit moet ff in javascript wss-->
 		</UL>		
 	</NAV>
-    <DIV ID="updatingnews">
-	<SECTION name = "mainsection">
-		<ARTICLE ID = "portfolio">
-			<DIV ID="imagebox"></DIV>
-			<HEADER ID = "info">
-			<H2 ID="naamportfolio">
-			Portfolio van Sam van Noord.	
-			</H2>
+	<DIV id="wrapper">
+		<DIV ID="updatingnews">
+			<SECTION name = "mainsection">
+				<ARTICLE ID = "portfolio">
+					<DIV ID="imagebox"></DIV>
+					<HEADER ID = "info">
+						<H2 ID="naamportfolio">
+							Portfolio van Sam van Noord.	
+						</H2>
 	
-			<br>
-			<p ID="test123">Naam: Sam van Noord. </p>
-			<br>
-			<p>Specialiteiten: Driften in zijn miata.</p>
-			<br>
-			<p>Woonplaats: Kofferbak van bovengenoemde miata.</p>
-			<br>
-			<p>Afgelopen projecten: No nut november, Destroy dick december.</p>
-			</HEADER>
-			
-		</ARTICLE>
+						<br>
+						<p ID="test123">Naam: Sam van Noord. </p>
+						<br>
+						<p>Specialiteiten: Driften in zijn miata.</p>
+						<br>
+						<p>Woonplaats: Kofferbak van bovengenoemde miata.</p>
+						<br>
+						<p>Afgelopen projecten: No nut november, Destroy dick december.</p>
+					</HEADER>
+				</ARTICLE>
 
-		<ARTICLE ID="beoordeling">
-			<HEADER ID= "beoordelingheader">
-			<h2 ID ="beoordeeltext">Beoordeel Sam.</h2>
-			<br>
-			<br>
-			<input ID= "oordeelgebruiker" value="Zeg iets over Sam!">
-			<p ID="oordeelgebruiker">5/5 would hire</p>	
-			<p ID="totalrating">totale rating: 420/5</p>
-			<br>
-			<input ID="submit" type="submit" value="Submit">
-			</HEADER>
-		</ARTICLE>
+				<ARTICLE ID="beoordeling">
+					<HEADER ID= "beoordelingheader">
+						<h2 ID ="beoordeeltext">Beoordeel Sam.</h2>
+						<br>
+						<br>
+						<input ID= "oordeelgebruiker" type="text" value="Zeg iets over Sam!">
+						<p ID="oordeelgebruiker">5/5 would hire</p>	
+						<p ID="totalrating">totale rating: 420/5</p>
+						<br>
+						<input ID="submit" type="submit" value="Submit">
+					</HEADER>
+				</ARTICLE>
 	
-	</SECTION>
+			</SECTION>
 
-	<ASIDE ID= "sidebar">
-	<p>hier komt dus een advertentie ofzo</p>
-	</ASIDE>
-    </DIV>
-	<FOOTER id="mainfooter">
-		Copyright  Kluslus.nl  © 2018
-	</FOOTER>
-</DIV>
+				<ASIDE ID= "sidebar">
+					<p>hier komt dus een advertentie ofzo</p>
+				</ASIDE>
+    	</DIV>
+			<FOOTER id="mainfooter">
+				Copyright  Kluslus.nl  © 2018
+			</FOOTER>
+	</DIV>
 </BODY>
 </HTML>
