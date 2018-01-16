@@ -29,7 +29,7 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+	position: absolute;
 	width: 100%;
 }
 article{
@@ -178,7 +178,12 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 }
 #mainfooter{
 	clear: both;
+    background-color: #efefef;
 	text-align: center;
-	padding: 20px;
+	padding: 1rem;
 	border-top: 2px solid orange;
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    left: 0
 }
