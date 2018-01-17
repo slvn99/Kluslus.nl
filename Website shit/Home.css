@@ -28,8 +28,8 @@ body{
 	border-bottom: 1px solid black;
 	max-width: 100%;
 	margin: 0px 0px;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 100px;
+	padding-right: 100px;
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
@@ -43,7 +43,6 @@ nav{
 	background-color: rgba(15,15,15,0.80);
 	position: sticky;
 	top: 0;
-	margin-bottom: 40px;
 	max-height: 51px;
 	max-width: 100%;
 	flex: 1;
@@ -51,8 +50,9 @@ nav{
 	}
 		nav > ul{ 
 			list-style-type: none;
-			padding-left: 15% /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
+			padding-left: 100px /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
 		 }
+		 	nav > ul > article{float: left; color: white; padding-right: 20px;padding-top:12px; }
 			nav > ul > li{
 				float: left;
 				width: auto;
@@ -103,8 +103,9 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 #updating_news{
 	display: flex;
-	padding: 10px 30px;
+	padding: 50px 50px;
 	background-color: rgba(15,15,15,0.95);
+	margin-bottom: 20px;
 }
 #main_section{
 	float: left;
@@ -114,7 +115,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	
 }
 #main_section article{
-	border: 1px groove white;
+	border: 1px solid white;
 	padding: 20px;
 	margin-bottom: 10px;
 	border-radius: 5px;	
@@ -126,15 +127,16 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
 	position: relative;
 	float: right;
-	border: 1px solid red;
+	border: 1px solid white;
 	width: 250px;
 	height: 400px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	padding: 5px;
 	flex: 0 0 auto;
-	background: #ffa500;
+	background: lightblue;
 	border-radius: 5px;
+	box-shadow: rgba(0,0,0,1) 3px 1px 4px;
 	
 }
 #ad_banner{
