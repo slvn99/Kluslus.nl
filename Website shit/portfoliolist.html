@@ -2,7 +2,7 @@
 <HTML lang="en">
 <HEAD>
 	<meta charset ="utf-8"/>
-    <title>Mijn Portfolio</title>
+    <title>Portfolio list</title>
     <script src="portfolio.js"></script>
     <link rel="stylesheet" href="Portfoliolist.css">
 </HEAD>
@@ -10,12 +10,13 @@
 <BODY>
 	<NAV>
 		<UL>			
-			<LI><A href="#home">Home</A></LI>
-			<LI><A class="active" href="#portfolio">Portfolio's</A></LI>
-			<LI><A href="#forum">Forum</A></LI>
-			<LI><A href="#mijn_berichten">Mijn berichten</A></LI>
-			<LI><A href="#profiel">Profiel</A></LI>
-			<LI><A href="#uitloggen">Uitloggen</A></LI>
+			<LI ID="homeknop"><A  href="home.html">Home</A></LI>
+			<LI ID="portfoliolistknop"><A class="active" href="portfoliolist.html">Portfolio's</A></LI>
+			<LI ID="forumknop"><A href="forum.html">Forum</A></LI>
+			<LI ID="mijnberichtenknop"><A href="mijn_berichten.html">Mijn berichten</A></LI>
+			<LI ID="profielknop"><A href="profiel.html">Profiel</A></LI>
+			<LI ID="mijnportfolioknop"><A href="portfolio.html">Mijn Portfolio</A></LI>
+			<LI ID="uitlogknop"><A href="#uitloggen">Uitloggen</A></LI>
 		</UL>		
 	</NAV>
 	<DIV id="wrapper">
@@ -23,7 +24,12 @@
 			<SECTION name ="Portfoliolist">
 				<ARTICLE ID="Namen">
 					<HEAD>
-						<HGROUP Id="Nummer_een" class="Nummer">
+						<HGROUP ID="Namen" class="Balk">
+							<H1>Namen</H1>
+						</HGROUP>
+					</HEAD>	
+					<HEAD>
+						<HGROUP ID="Nummer_een" class="Nummer">
 							<H1>Sam van Noord</H1>
 						</HGROUP>
 					</HEAD>	
@@ -46,23 +52,28 @@
 			 <SECTION name="Specialiteiten">
 			 	<ARTICLE ID = Specialiteiten>
 					<HEAD>
-						<HGROUP Id="Nummer_een" class="Nummer">
-							<H1>Sam van Noord</H1>
+						<HGROUP ID="Specialiteiten" class="Balk">
+							<H1>Specialiteiten</H1>
+						</HGROUP>
+					</HEAD>	
+					<HEAD>
+						<HGROUP ID="Nummer_een" class="Nummer">
+							<H1>Rijden in zijn miata</H1>
 						</HGROUP>
 					</HEAD>	
 					<HEAD>
 						<HGROUP ID="Nummer_twee" class="Nummer">
-							<H1>Jasper de Leeuw</H1>
+							<H1>Forums kijken en chillen in IJlst City</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_drie" class="Nummer">
-							<H1>Hidde de Vries</H1>
+							<H1>Rokende servers</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_vier" class="Nummer">
-							<H1>Frank de Jong</H1>
+							<H1>Reddit/Twitch kijken</H1>
 						</HGROUP>
 					</HEAD>
 				</ARTICLE>
@@ -70,23 +81,28 @@
 			<SECTION name ="Woonplaats">
 				<ARTICLE ID ="Woonplaats">
 					<HEAD>
+						<HGROUP ID="Woonplaats" class="Balk">
+							<H1>Woonplaats</H1>
+						</HGROUP>
+					</HEAD>	
+					<HEAD>
 						<HGROUP Id="Nummer_een" class="Nummer">
-							<H1>Sam van Noord</H1>
+							<H1>Hylpen</H1>
 						</HGROUP>
 					</HEAD>	
 					<HEAD>
 						<HGROUP ID="Nummer_twee" class="Nummer">
-							<H1>Jasper de Leeuw</H1>
+							<H1>IJlst</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_drie" class="Nummer">
-							<H1>Hidde de Vries</H1>
+							<H1>Veenklooster</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_vier" class="Nummer">
-							<H1>Frank de Jong</H1>
+							<H1>Rijs</H1>
 						</HGROUP>
 					</HEAD>
 				</ARTICLE>
@@ -94,23 +110,28 @@
 			<SECTION name ="Beoordelingen">
 				<ARTICLE ID="Beoordelingen">
 					<HEAD>
+						<HGROUP ID="Beoordeling" class="Balk">
+							<H1>Beoordelingen</H1>
+						</HGROUP>
+					</HEAD>	
+					<HEAD>
 						<HGROUP Id="Nummer_een" class="Nummer">
-							<H1>Sam van Noord</H1>
+							<H1>0/5 (0)</H1>
 						</HGROUP>
 					</HEAD>	
 					<HEAD>
 						<HGROUP ID="Nummer_twee" class="Nummer">
-							<H1>Jasper de Leeuw</H1>
+							<H1>0/5 (10)</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_drie" class="Nummer">
-							<H1>Hidde de Vries</H1>
+							<H1>0/5 (0)</H1>
 						</HGROUP>
 					</HEAD>
 					<HEAD>
 						<HGROUP ID="Nummer_vier" class="Nummer">
-							<H1>Frank de Jong</H1>
+							<H1>0/5 (0)</H1>
 						</HGROUP>
 					</HEAD>
 				</ARTICLE>
