@@ -9,7 +9,6 @@ body{
 	min-height: 100%;
 	width: 100%;
 	text-rendering: optimizeLegibility;
-	background: darkred;
 }
 
 #wrapper/*behalve navbar*/{
@@ -25,12 +24,13 @@ body{
 }
 
 body{
-	text-align:center;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	position: absolute;
+	background:linear-gradient(#e71212,darkgrey);
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
 	width: 100%;
+	text-rendering: optimizeLegibility;
+	overflow: auto;
 }
 article{
 	background:#fffbcc;
