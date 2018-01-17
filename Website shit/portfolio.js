@@ -1,7 +1,7 @@
 window.onload=SelectInput; // voer deze functie uit wanneer de pagina geladen word.
 
 function SelectInput(){
-	document.querySelector('#submit').onclick=ValidateInput;
+	document.querySelector('#submit').onclick=ValidateInput, addreactie;
 	/*document.querySelector('#homeknop').onclick=ShowHome;
 	//document.querySelector('#forumknop').onclick=ShowForum;
 	//document.querySelector('#uitlogknop').onclick=LogOut;
@@ -10,17 +10,48 @@ function SelectInput(){
 	dit is miss later nog nodig ofzo*/
 }
 function ValidateInput(){
-	var x = document.getElementById('oordeelgebruiker').value;
-	if(x=="Zeg iets over Sam!") {
+	var text = document.getElementById('oordeelgebruiker').value;
+	var name = document.getElementById('naamgebruiker').value;
+	if(text=="Zeg iets over Sam!" || name=="Voer uw naam in.") {
 		alert("Je hebt niks ingevoerd!");
 	}
-	else if(x.length <= 4){
+	else if(text.length <= 4){
 		alert("Vul minstens 5 karakters in!");
 	}
 
 	else{
-		alert("Bedankt! Je beoordeling " + x + " is opgeslagen.")
+		addreactie();
 	}
-console.log(x); //voor testen met chrome console.
 }
 
+/*function DisplayImage(){
+var par = document.getElementById("imagebox");
+var img = document.createElement("image");
+img.src = "Resources/sam.jpg";
+par.appendChild(img);
+}*/
+
+function addreactie() {
+var text = document.getElementById('oordeelgebruiker').value;
+var name = document.getElementById('naamgebruiker').value;
+var element = document.createElement("input");
+var label = document.createElement("Label");
+label.innerHTML = name;     
+
+
+element.setAttribute("type", "text");
+element.setAttribute("value", text);
+element.setAttribute("name", "Test Name");
+element.setAttribute("style", "border: 1px solid black");
+element.setAttribute("style", "background: white");
+
+label.setAttribute("style", "font-weight:normal");
+
+
+var foo = document.getElementById("reacties");
+
+
+foo.appendChild(label);
+foo.appendChild(element);
+alert("Bedankt! Je beoordeling "+text+" is opgeslagen.");
+}
