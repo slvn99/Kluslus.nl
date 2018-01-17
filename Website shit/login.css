@@ -1,7 +1,9 @@
 input,  select {
 	vertical-align:middle;
 }
-
+body {
+	background-image: url("donaldtrump-1516188705356-807.jpg");
+}
 .main-wrapper {
 	margin: 0auto;
 	width: 1000px;
