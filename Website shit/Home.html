@@ -28,9 +28,20 @@
 		</UL>		
 	</NAV>
 	<DIV id="wrapper">
-
-		<VIDEO src="resources/BLYAAAAAAT.mp4" width="460" height="244" poster="resources/donaldtrump.jpg" controls> </VIDEO>
-
+		<SECTION id="skin">
+			<VIDEO id="myMovie" width="460" height="244" poster="resources/donaldtrump.jpg"> 
+				<SOURCE src="resources/BLYAAAAAAT.mp4">
+			</VIDEO>
+			<NAV id="videonav">
+				<DIV id="buttons">
+					<BUTTON type="button" id="playButton">Play</BUTTON>
+				</DIV>
+				<DIV id="defaultBar">
+					<DIV id="progressBar"></DIV>
+				</DIV>
+				<DIV style="clear:both;"></DIV>
+			</NAV>
+		</SECTION>
 		<DIV id="updating_news">
 			<SECTION id="main_section">
 				<ARTICLE>
