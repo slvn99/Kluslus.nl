@@ -125,22 +125,22 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
  	border-top: 1px solid black;
  	padding: 20px;
  	background: #ececec;
- 	font: bold 13px Tahoma;
 }
-#Nummer_een{
-
+.Namen{
+  	font: 20px Arial;
+  	padding: 20px;
 }
-
-#Nummer_twee{
-
+.Woonplaats{
+  	font: 20px Arial;
+  	padding: 20px;
 }
-
-#Nummer_drie{
-	
+.Specialiteiten{
+  	font: 20px Arial;
+  	padding: 20px;
 }
-
-#Nummer_vier{
-	
+.Beoordelingen{
+  	font: 20px Arial;
+  	padding: 20px;	
 }
 #sidebar{
 	position: relative;
