@@ -101,6 +101,7 @@ nav{
 nav > ul > li > a.active{background-color: red;}
 nav > ul > li > a:hover:not(.active){background-color:yellow;}
 
+video{margin: auto;}
 #updating_news{
 	display: flex;
 	padding: 50px 50px;
