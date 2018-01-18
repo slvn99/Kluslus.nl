@@ -145,6 +145,15 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align:right;
 }
 
+#reacties{
+	float: center;
+	border: solid red 1px;
+	border-radius: 5px;
+	margin-top: 20PX;
+	padding: 15px;
+	box-shadow: 5px 5px;
+}
+
 #sidebar{
 	position: relative;
 	float: right;

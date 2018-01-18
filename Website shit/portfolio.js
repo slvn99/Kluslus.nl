@@ -34,18 +34,14 @@ par.appendChild(img);
 function addreactie() {
 var text = document.getElementById('oordeelgebruiker').value;
 var name = document.getElementById('naamgebruiker').value;
-var element = document.createElement("input");
+var element = document.createElement("p");
 var label = document.createElement("Label");
 label.innerHTML = name;     
 
 
-element.setAttribute("type", "text");
-element.setAttribute("value", text);
-element.setAttribute("name", "Test Name");
-element.setAttribute("style", "border: 1px solid black");
-element.setAttribute("style", "background: white");
 
-label.setAttribute("style", "font-weight:normal");
+element.setAttribute("value", text);
+
 
 
 var foo = document.getElementById("reacties");
