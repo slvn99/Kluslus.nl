@@ -36,7 +36,7 @@ var text = document.getElementById('oordeelgebruiker').value;
 var name = document.getElementById('naamgebruiker').value;
 var element = document.createElement("p");
 var label = document.createElement("Label");
-label.innerHTML = name;     
+label.innerHTML = name + "  -  " + text;     
 
 
 
