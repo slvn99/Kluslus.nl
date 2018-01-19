@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <HTML lang="en">
-<META name="viewport" content="width=device-width, initial-scalo=1.0">
+
 <HEAD>
 	<META charset="utf-8"/>
-	<meta name="viewport" content="initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<TITLE>Kluslus.nl</TITLE>
 	<LINK rel="stylesheet" href="Home.css">
-	<script type="text/javascript" src="home.js"></script>
+    <link rel="stylesheet" media="screen" href="http://vjs.zencdn.net/5.4.6/video-js.min.css">
+    <link rel="stylesheet" media="screen" href="vsg-skin.css">
+
+
 </HEAD>
 
 
@@ -29,19 +32,11 @@
 	</NAV>
 	<DIV id="wrapper">
 		<SECTION id="skin">
-			<VIDEO id="myMovie" width="460" height="244" poster="resources/donaldtrump.jpg"> 
-				<SOURCE src="resources/BLYAAAAAAT.mp4">
-			</VIDEO>
-			<NAV id="videonav">
-				<DIV id="buttons">
-					<BUTTON type="button" id="playButton">Play</BUTTON>
-				</DIV>
-				<DIV id="defaultBar">
-					<DIV id="progressBar"></DIV>
-				</DIV>
-				<DIV style="clear:both;"></DIV>
-			</NAV>
+			<VIDEO id="uniqueID" class="video-js vjs-fluid" controls preload="auto" width="460" height="244" poster="resources/donaldtrump.jpg" data-setup='{}'>
+                    <source src="resources/BLYAAAAAAT.mp4" type="video/mp4">
+                </VIDEO>
 		</SECTION>
+
 		<DIV id="updating_news">
 			<SECTION id="main_section">
 				<ARTICLE>
@@ -117,6 +112,14 @@
 			Copyright Kluslus.nl 2018
 		</FOOTER>
 	</DIV>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+    <!-- VIDEOJS JS -->
+    <script src="http://vjs.zencdn.net/5.4.6/video.min.js"></script>
+    <script src="https://cdn.rawgit.com/videojs/videojs-youtube/master/src/Youtube.js"></script>
+
 
 </BODY>
 </HTML>
