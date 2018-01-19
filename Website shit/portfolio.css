@@ -153,6 +153,14 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	padding: 15px;
 	box-shadow: 5px 5px;
 }
+#naamgebruiker{
+	position:relative;
+	bottom:6px;
+}
+#oordeelgebruiker{
+	height:50px;
+	width:2;
+}
 
 #sidebar{
 	position: relative;

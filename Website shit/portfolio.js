@@ -6,16 +6,18 @@ function SelectInput(){
 function ValidateInput(){
 	var text = document.getElementById('oordeelgebruiker').value;
 	var name = document.getElementById('naamgebruiker').value;
-	if(text=="Zeg iets over Sam!" || name=="Voer uw naam in.") {
+	if(text=="Zeg iets over Sam!" || name=="Voer uw naam in.") 
 		alert("Je hebt niks ingevoerd!");
-	}
-	else if(text.length <= 4){
-		alert("Vul minstens 5 karakters in!");
-	}
+	
+	else if(text.length <= 4)
+		alert("Je beoordeling moet minstens vijf karakters lang zijn.");
+	
+	else if(text==name)
+		alert("Je naam is geen goeie beoordeling.");
 
-	else{
+	else
 		addreactie();
-	}
+	
 }
 
 
@@ -30,7 +32,7 @@ var artname = document.createElement('h1');
 label.innerHTML = text;   
 artname.innerHTML = name;  
 newart.setAttribute("ID",("reactie"+ counter));
-newart.setAttribute("style","float:center;border-radius: 5px;border:solid red 1px;margin:15px;");
+newart.setAttribute("style","border-radius: 5px;border:solid red 1px;margin:15px;padding:15px;box-shadow:5px 5px;display:block;");
 newart.appendChild(artname);
 section.appendChild(newart);
 newart.appendChild(label);
