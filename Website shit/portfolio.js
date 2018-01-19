@@ -39,4 +39,15 @@ newart.appendChild(label);
 //nu zouden die variabelen dus gesaved moeten worden naar een db oid. of alleen section variable geen idee.
 alert("Je reactie "+text+" is opgeslagen!");
 counter++;
+saveReactie(text,name);
+}
+
+function saveReactie(text,name){
+var file = new File("Resources/reacties.txt")
+
+
+file.open("w"); 
+file.writeln(name);
+file.writeln(text);
+file.close();
 }
