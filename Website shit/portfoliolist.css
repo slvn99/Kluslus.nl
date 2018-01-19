@@ -109,10 +109,6 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	padding: 10px 30px;
 }
 
-#Portfoliolist{
-	font: 70px bold Tahoma;
-}
-
 .Balk{
 	box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
 	border-bottom: 1px dotted rgba(0,0,0,.1);
@@ -124,11 +120,17 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 .Nummer{
  	border-top: 1px solid black;
  	padding: 20px;
- 	background: #ececec;
 }
+
 .Namen{
   	font: 20px Arial;
   	padding: 20px;
+}
+#SAM{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
 .Woonplaats{
   	font: 20px Arial;
