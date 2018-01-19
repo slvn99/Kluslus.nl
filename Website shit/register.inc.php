@@ -21,7 +21,20 @@ if (isset($_POST['submit'])) {
 			header("Location: ../register.php?signup=email");
 			exit();
 		} else {
-			$sql = "select * from users WHERE user_uid='$uid'";
+			$sql = "SELECT * FROM users WHERE user_uid='$uid'";
+			$result = mysqli_query($conn, $sql);
+			$resultCheck = mysqli_num_rows($result);
+
+			if ($resultCheck > 0)  {
+			header("Location: ../register.php?signup=usergebruikt");
+				exit();
+			} else {
+				$hashedpass = PASSWORD_HASH($pass,  PASSWORD_DEFAULT);
+				$sql = "INSERT INTO users (user_vnaam, user_lnaam, user_email, user_pass, user_gender) VALUES ('$vnaam', '$lnaam',  '$email', '$pass', '$gender');";
+			 mysqli_query($conn,  $sql);
+			 header("Location: ../register.php?signup=Success");
+			 exit();
+			}
 		}
 
 	}
