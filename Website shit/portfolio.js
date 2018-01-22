@@ -43,11 +43,11 @@ saveReactie(text,name);
 }
 
 function saveReactie(text,name){
-var file = new File("Resources/reacties.txt")
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fh = fso.OpenTextFile("Resources/reacties.txt", 8, false, 0);
+    fh.WriteLine(name + ' , ' + text );
+    fh.Close();
+	
 
 
-file.open("w"); 
-file.writeln(name);
-file.writeln(text);
-file.close();
 }
