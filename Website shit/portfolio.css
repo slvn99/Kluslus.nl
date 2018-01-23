@@ -2,6 +2,14 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+
 section, footer, aside, nav, article, hgroup{display:block;}
 body{
 	height: auto !important;
@@ -40,6 +48,7 @@ body{
 article{
 	background:#fffbcc;
 }
+#logo{background: transparent;}
 
 nav{
 	z-index: 99999;
@@ -49,7 +58,6 @@ nav{
 	background-color: rgba(15,15,15,0.80);
 	position: sticky;
 	top: 0;
-	margin-bottom: 40px;
 	max-height: 51px;
 	max-width: 100%;
 	flex: 1;
@@ -57,8 +65,9 @@ nav{
 	}
 		nav > ul{ 
 			list-style-type: none;
-			padding-left: 15% /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
+			padding-left: 100px /*AFSTAND VAN DE LINKER KANT BIJ NAVIGATIEBALK*/
 		 }
+		 	nav > ul > article{float: left; color: white; padding-right: 20px;padding-top:12px; }
 			nav > ul > li{
 				float: left;
 				width: auto;
