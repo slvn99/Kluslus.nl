@@ -19,24 +19,13 @@ body {
 }
 #vanalles{
 	border: 3px solid black;
-	width: 1000px;
+	width: 2000px;
 	margin: 15px auto;
 	text-align:left;
 	display:-webkit-box;
 	-webkit-box-orient:vertical;
 	-webkit-box-flex: 1;
 
-}	
-
-#topheader{
-	background: grey;
-    	border: 4px solid black;
-	padding: 20px;
-	font-family:Forum;
-	text-align:center;
-}
-.content {
-	padding:120px;
 }
 .nav-main {
 	height:70px;
@@ -60,8 +49,26 @@ body {
 	list-style-type:none;
 }
 .nav-main > ul > li {
-	float:left;
+	
+
+		float: left;
+		width: auto;
+		box-shadow: rgba(0,0,0,0.4) 0px 1px 5px;
+		border-bottom: 1px dotted rgba(0,0,0,.1);
+		position: relative;
 }
+nav > ul > li > a{
+					display: block;
+					color: rgba(255,255,255,.65);
+					font-weight: 700;
+					padding: 1rem 1.5rem;
+					text-decoration: none;
+					transition: background 1s;
+					color:#fff;
+					font: bold 14px Tahoma;
+				}
+nav > ul > li > a.active{background-color: red;}
+nav > ul > li > a:hover:not(.active){background-color:yellow;}
 .nav-item {
 	display:inline-block;
 	padding:15px 20px;
@@ -109,6 +116,7 @@ max-height:400px;
 transition:max-height 0,5s ease-in;	
 }
 
+
 #buttons{
 	float:left;
 	
@@ -119,8 +127,18 @@ transition:max-height 0,5s ease-in;
 	display:inline-block;
 	font-size: 16px;
 }
-.nav-main {background-color:#222;}
+.nav-main {background-color:#222;}	
 
+#topheader{
+	background: grey;
+    	border: 4px solid black;
+	padding: 20px;
+	font-family:Forum;
+	text-align:center;
+}
+.content {
+	padding:120px;
+}
 
 
 
@@ -167,7 +185,9 @@ article{
 	webkit-box-orient:horizontal;
 }
 #usepass{
-	position:right;
+	position:absolute;
+	float:left;
+	
 }
 a:link {
     text-decoration: none;
@@ -199,6 +219,21 @@ a:active {
 	list-style-type:none;
 	text-decoration:none;
 	color:black;
+}
+#the_feed{
+	display:inline-block;
+	position:absolute;
+	
+	right: 25px;
+	border: 1px solid blue;
+	width: 15%;
+	height: 600px;
+	
+	padding: 5px;
+	flex: 0 0 auto;
+	background: rgb(235, 88, 160)
+	border-radius: 5px;
+	
 }
 	
 }

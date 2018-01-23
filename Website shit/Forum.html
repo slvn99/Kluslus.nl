@@ -15,24 +15,18 @@
    
         
 
-	<HEADER id ="topheader">
-		<H1>KLUSLUS FORUM<H1>
-			<DIV id="textlinks">
-				<H2> Hey, username</H2>
-				<LI>
+		<HEADER id ="topheader">
+			<H1>KLUSLUS FORUM<H1>
+				<DIV id="textlinks">
+					<H2> Hey, username</H2>
+					<LI>
 					<A href="#ongelezenposts" >Bekijk ongelezen posts<
-			 	</LI>
-			 	<LI>
+			 		</LI>
+			 		<LI>
 			 		<A href="#repliesposts" >Bekijk nieuwe replies  op je posts<
-				</LI>
-			</DIV>
-			<DIV id="search"> 
-        <FORM method="post" action=""> 
-            <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
-            <input type="submit" value="Search" name="find" id="find" /></form> 
-             </DIV>
-		</FORM>
-		<DIV id = "usepass">
+					</LI>
+				</DIV>
+					<DIV id = "usepass">
 		<FORM action='login.php' method='POST'>
 		 <INPUT type='text' name='username'
 		placeholder='Username'/>
@@ -41,11 +35,17 @@
 		<input type='submit' name='login' value='Log in' />
 	</FORM>
 	</DIV>
+				<DIV id="search"> 
+        	<FORM method="post" action=""> 
+           			 <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
+            			<input type="submit" value="Search" name="find" id="find" /></form> 
+            	</DIV>
+			
 	</HEADER>
 	
 	<NAV class= "nav-main" >
 		<div class="logo">KLUSLUS</div>
-		<UL>
+			<UL>
 			<LI>
 				<A href="#home" class= "nav-item" >Home</A>
 
@@ -106,11 +106,18 @@
 			<HEADER>
 				<H1>Kluslus</H1>
 			</HEADER>
+			<DIV>
+		<ASIDE id="the_feed">
+				
+			ADVERTENTIE
+		</ASIDE>
+	</DIV>
 		
 		<ARTICLE>
 			<div id="square"></div>
 			<P><A href="#algemeneDiscussie">Algemene Discussie</A></P> 
 		</ARTICLE>
+		
 		<ARTICLE>
 			<div id="square"></div>
 			<P><A href="#aankondigingen">Aankondigingen</A></P>
@@ -144,13 +151,14 @@
 			<div id="square"></div>
 			<P><A href="#spam">Spam</A></P>
 		</ARTICLE>
+		<DIV>
+		
+	</DIV>
+
 
 	</SECTION>
 	</DIV>
-	<ASIDE>
-		<H3 id="sidebar">Actieve topics</H3>
-
-	</ASIDE>
+	
 		
 	<FOOTER id="defooter" >
 		<P> Laatste post: </P>
