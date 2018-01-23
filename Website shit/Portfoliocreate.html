@@ -4,50 +4,48 @@
 <HEAD>
 	<meta charset ="utf-8"/>
     <title>Create Portfolio</title>
-    <link rel="stylesheet" href="portfoliocreate.css">
+    <link rel="stylesheet" href="Portfoliocreate.css">
 </HEAD>
 <BODY>
-	<DIV id="wrapper">
-	<HEADER ID="top_header">
-		<H1 name ="test">Create Portfolio</H1>
-	</HEADER>
-
 	<NAV>
-		<UL>			
-			<LI><A class="active" href="#home">Home</A></LI>
-			<LI><A href="#portfolio">Portfolio's</A></LI>
-			<LI><A href="#forum">Forum</A></LI>
-			<LI><A href="#mijn_berichten">Mijn berichten</A></LI>
-			<LI><A href="#profiel">Profiel</A></LI>
-			<LI><A href="#uitloggen">Uitloggen</A></LI>
+		<UL>
+			<ARTICLE id="logo">
+				<H1>Logo Here!</H1>
+			</ARTICLE>			
+			<LI ID="homeknop"><A href="home.html">Home</A></LI>
+			<LI ID="Portfoliolistknop"><A href="Portfoliolist.html">Portfolio's</A></LI>
+			<LI ID="mijnPortfolioknop"><A class="active" href="Portfolio.html">Mijn Portfolio</A></LI>
+			<LI ID="forumknoP"><A href="forum.html">Forum</A></LI>
+			<LI ID="mijnberichtenknop"><A href="mijn_berichten.html">Mijn berichten</A></LI>
+			<LI ID="Profielknop"><A href="Profiel.html">Profiel</A></LI>			
+			<LI ID="registreerknop"><A href="Registratie.html">Registreren</A></LI>
+			<LI ID="inlogknop"><A href="Inloggen.html">Log in</A></LI>
 		</UL>		
 	</NAV>
+	<DIV id="wrapper">
+    	<DIV ID="updatingnews">
+			<SECTION name = "mainsection">
+				<ARTICLE ID = "portfolio">
+					<HEADER ID = "info">
+						<H1 ID="naamportfolio">
+							Create je eigen portfolio	
+						</H1>
+						<BR><P>Naam:_________________________</P>
+						<BR><P>Specialiteiten:_________________________</P>
+						<BR><P>Woonplaats:_________________________</P>
+						<BR><P>Afgelopen Projecten:_________________________</P>
+						<BR><P ID="submitbutton">Submit changes</P>
+					</HEADER>
+				</ARTICLE>
+			</SECTION>
 
-    <DIV ID="updatingnews">
-	<SECTION name = "mainsection">
-		<ARTICLE ID = "portfolio">
-			<HEADER ID = "info">
-			<h2 ID="naamportfolio">
-			Create je eigen porfolio	
-			</h2>
-			<br><p>Naam:_________________________</p>
-			<br><p>Specialiteiten:_________________________</p>
-			<br><p>Woonplaats:_________________________</p>
-			<br><p>Afgelopen projecten:_________________________</p>
-			<br><p ID="submitbutton">Submit changes</p>
-			</HEADER>
-
-		</ARTICLE>
-	
-	</SECTION>
-
-	<ASIDE ID= "sidebar">
-	<br><br><br><br><br><br><br><p>This doggo dieded Press F to pay respects.</p>
-	</ASIDE>
-    </DIV>
-	<FOOTER id="mainfooter">
-		Copyright Kluslus.nl © 2018
-	</FOOTER>
+			<ASIDE ID= "sidebar">
+				<BR><BR><BR><BR><BR><BR><BR><P>This doggo dieded press F to pay respects.</P>
+			</ASIDE>
+    	</DIV>
+		<FOOTER id="mainfooter">
+			Copyright Kluslus.nl © 2018
+		</FOOTER>
 	</DIV>
 </BODY>
 </HTML>

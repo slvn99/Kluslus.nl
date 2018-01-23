@@ -5,6 +5,7 @@ function SelectInput(){
 	document.querySelector('#uitlogknop').onclick=LogOut;
 	document.querySelector('#mijnberichtenknop').onclick=ShowMessages;
 	document.querySelector('#profielknop').onclick=ShowProfile;
+	document.querySelector('#portfoliocreateknop').onclick=ShowPortfoliocreate
 }
 function ValidateInput(){
 	var x = document.getElementById('oordeelgebruiker').value;
