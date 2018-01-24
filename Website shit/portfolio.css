@@ -209,6 +209,16 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	width: 300px;
 	height: 500px;
 }
+#ad_banner{
+		float: left;
+		background: white;
+		margin:auto;
+		margin-bottom: 25px;
+		text-align: center;
+		padding: 0;
+		width: 1000px;
+		height: 100px;
+		border: 2px solid green
 
 #mainfooter{
 	font: 25px bold Tahoma;
