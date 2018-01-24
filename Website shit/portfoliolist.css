@@ -12,6 +12,8 @@ h2{
 
 section, footer, aside, nav, article, hgroup{display:block;}
 body{
+	background:linear-gradient(#e71212,darkgrey);
+	background-repeat: no-repeat;
 	height: auto !important;
 	height: 100%;
 	min-height: 100%;
@@ -168,12 +170,15 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 }
 
 #mainfooter{
-	font: 25px bold Tahoma;
-	clear:both;
+	width: 100%;
+	clear: both;
 	text-align: center;
-	border-top:1px solid black;
+	padding: 20px;
+	border-top: 2px solid orange;
+	margin: auto;
 	position: absolute;
-	right: 0;
-    bottom: 0;
-    left: 0
+ 	right: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	padding: 1rem;
 }
