@@ -22,6 +22,7 @@ body{
 }
 
 #wrapper/*behalve navbar*/{
+	background-image: url('Resources/backgroundtest5.jpg');
 	border-bottom: 1px solid black;
 	height: 855px;
 	max-width: 100%;
