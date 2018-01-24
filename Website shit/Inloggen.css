@@ -1,0 +1,46 @@
+body {
+	margin: 0 auto;
+
+}
+.simple-form{
+	width:500px;
+	height:400px;
+	text-align:center;
+	margin:auto;
+	background-color:rgb(56, 7, 13);
+	border-radius:4px;
+	margin-top:150px;
+	
+}
+input[type="text"], input[type="password"]{
+	height:45px;
+	width: 300px;
+	font-size:18px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+.form-input::before{
+	content: "\f007";
+	position:absolute;
+
+	font-size:35px;
+	font-family: "FontAwesome";
+	padding-left:5px;
+	padding-top:5px;
+	font-size:35px;
+
+}
+.form-input:last-child::before{
+	content: "\f023";
+	
+}
+.btn-login{
+	padding:15px 25px;
+	color:#fff;
+	background-color: rgb(89, 135, 209);
+}
+a{
+	color:#fff;
+
+}
+

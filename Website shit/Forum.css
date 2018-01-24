@@ -21,7 +21,7 @@ body {
 }
 #vanalles{
 	border: 3px solid black;
-	width: 2000px;
+	width: 1300px;
 	margin: 15px auto;
 	text-align:left;
 	display:-webkit-box;
@@ -84,7 +84,7 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 }
 .nav-content{
 	position:absolute;
-	top:287px;
+	top:72px;
 	overflow:hidden;
 	background-color:#222;
 	max-height:0;
@@ -158,8 +158,9 @@ src: url("forum-regular.ttf");
 	clear:both;
 	text-align:center;
 	padding:20px;
-	border-top: 2px solid blue;
+	border: 2px solid blue;
 	font-family:Forum;
+	font-size:15px;
 }
 #newdiv{
 	display:-webkit-box;
@@ -170,9 +171,9 @@ src: url("forum-regular.ttf");
 	font-size: 30px;
 	-webkit-box-flex: 1;
 	margin: 20px;
-	padding: 20px;
+	padding: 10px;
 	margin: 0 1.5%;
-  	width: 63%;
+  	width: 60%;
 }
 article{
 	background: #FFFBCC;
@@ -223,16 +224,75 @@ a:hover {
 	display:inline-block;
 	position:absolute;
 	
-	right: 25px;
+	right: 0px;
 	border: 1px solid blue;
 	width: 15%;
-	height: 600px;
+	height: 350px;
+	top: 230px;
 	
 	padding: 5px;
 	flex: 0 0 auto;
 	background: rgb(235, 88, 160)
 	border-radius: 5px;
+	background-color:blue;
+
 	
 }
+#the_feed1{
+	display:inline-block;
+	position:absolute;
 	
+	right: 0px;
+	border: 1px solid blue;
+	width: 15%;
+	height: 543px;
+	top: 598px;
+	
+	padding: 5px;
+	flex: 0 0 auto;
+	background: rgb(235, 88, 160)
+	border-radius: 5px;
+	background-color:blue;
+	
+}
+
+
+footer {
+	text-align:center
+}
+#active_posts{
+	display:inline-block;
+	position:absolute;
+	
+	right: 400px;
+	top: 360px;
+	border: 1px solid blue;
+	width: 15%;
+	height: 300px;
+	
+	padding: 5px;
+	flex: 0 0 auto;
+	background: rgb(235, 88, 160)
+	border-radius: 5px;
+	background-color:red;
+}
+#recente_suggesties{
+	display:inline-block;
+	position:absolute;
+	
+	right: 400px;
+	top: 700px;
+	border: 1px solid blue;
+	width: 15%;
+	height: 400px;
+	
+	padding: 5px;
+	flex: 0 0 auto;
+	background: rgb(235, 88, 160)
+	border-radius: 5px;
+	background-color:red;
+
+}
+
+
 }
