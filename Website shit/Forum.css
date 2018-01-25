@@ -59,7 +59,7 @@ body {
 		border-bottom: 1px dotted rgba(0,0,0,.1);
 		position: relative;
 }
-nav > ul > li > a{
+.nav-main > nav > ul > li > a{
 					display: block;
 					color: rgba(255,255,255,.65);
 					font-weight: 700;
