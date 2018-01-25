@@ -1,4 +1,3 @@
-
 window.onload=SelectInput; // voer deze functie uit wanneer de pagina geladen word.
 var counter = 1; // counter voor dynamische benaming van reacties.
 function SelectInput(){
