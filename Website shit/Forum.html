@@ -15,24 +15,17 @@
    
         
 
-	<HEADER id ="topheader">
-		<H1>KLUSLUS FORUM<H1>
-			<DIV id="textlinks">
-				<H2> Hey, username</H2>
-				<LI>
-					<A href="#ongelezenposts" >Bekijk ongelezen posts<
-			 	</LI>
-			 	<LI>
-			 		<A href="#repliesposts" >Bekijk nieuwe replies  op je posts<
-				</LI>
-			</DIV>
-			<DIV id="search"> 
-        <FORM method="post" action=""> 
-            <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
-            <input type="submit" value="Search" name="find" id="find" /></form> 
-             </DIV>
-		</FORM>
-		<DIV id = "usepass">
+		<HEADER id ="topheader">
+			<H1>KLUSLUS FORUM<H1>
+				<DIV id="textlinks">
+					<H2> Hey, username</H2>
+					<LI>
+					<A href="#ongelezenposts" >Bekijk ongelezen posts<A>
+			 		</LI>
+			 		<LI>
+			 		<A href="#repliesposts" >Bekijk nieuwe replies  op je posts<A>
+				</DIV>
+					<DIV id = "usepass">
 		<FORM action='login.php' method='POST'>
 		 <INPUT type='text' name='username'
 		placeholder='Username'/>
@@ -41,6 +34,12 @@
 		<input type='submit' name='login' value='Log in' />
 	</FORM>
 	</DIV>
+				<DIV id="search"> 
+        	<FORM method="post" action=""> 
+           			 <input type="text" value="" name="searchtext" id="searchtext" size="32" /> 
+            			<input type="submit" value="Search" name="find" id="find" /></form> 
+            	</DIV>
+			
 	</HEADER>
 	
 	<NAV class= "nav-main" >
@@ -99,15 +98,35 @@
 	</NAV>
 	<DIV id=newdiv>
 	<SECTION id= "mainsectie" >
+		<ASIDE id="active_posts">
+				
+			ACTIEVE TOPICS
+		</ASIDE>
+		<ASIDE id="recente_suggesties">
+			RECENTE SUGGESTIES
+				
+			
+		</ASIDE>
 		
 			<HEADER>
 				<H1>Kluslus</H1>
 			</HEADER>
+			<DIV>
+		<ASIDE id="the_feed">
+				
+			ADVERTENTIE
+		</ASIDE>
+		<ASIDE id="the_feed1">
+				
+			ADVERTENTIE
+		</ASIDE>
+	</DIV>
 		
 		<ARTICLE>
 			<div id="square"></div>
 			<P><A href="#algemeneDiscussie">Algemene Discussie</A></P> 
 		</ARTICLE>
+		
 		<ARTICLE>
 			<div id="square"></div>
 			<P><A href="#aankondigingen">Aankondigingen</A></P>
@@ -141,19 +160,26 @@
 			<div id="square"></div>
 			<P><A href="#spam">Spam</A></P>
 		</ARTICLE>
+		<DIV>
+		
+	</DIV>
+	<DIV id ="defooter">
+
+		<P> Laatste post: </P>
+		<P> Laatst geregistreerd: </P>
+		<P> Gebruikers online:</
+	</DIV>
+
 
 	</SECTION>
 	</DIV>
-	<ASIDE>
-		<H3 id="sidebar">Actieve topics</H3>
-
-	</ASIDE>
+	
 		
-	<FOOTER id="defooter" >
-		<P> Laatste post: </P>
-		<P> Laatst geregistreerd: </P>
-		<P> Gebruikers online:</P>
+	
+	<FOOTER>
+		Copyright KLUSLUS
 	</FOOTER>
+
 </DIV>
 </BODY>
 </HTML>

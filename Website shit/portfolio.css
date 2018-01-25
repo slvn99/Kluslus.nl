@@ -11,15 +11,6 @@ h2{
 }
 
 section, footer, aside, nav, article, hgroup{display:block;}
-body{
-	background:linear-gradient(#e71212,darkgrey);
-	background-repeat: no-repeat;
-	height: auto !important;
-	height: 100%;
-	min-height: 100%;
-	width: 100%;
-	text-rendering: optimizeLegibility;
-}
 
 #wrapper/*behalve navbar*/{
 	background-image: url('Resources/backgroundtest5.jpg');
@@ -39,17 +30,23 @@ body{
 	height: auto !important;
 	height: 100%;
 	min-height: 100%;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	width: 100%;
 	text-rendering: optimizeLegibility;
 	overflow: auto;
     margin:0;
     padding:0;
+    position: absolute;
 }
 
 article{
 	background:#fffbcc;
 }
 #logo{background: transparent;}
+
 
 nav{
 	z-index: 99999;
@@ -178,6 +175,19 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 	text-align:right;
 }
 
+#reacties{
+	float: center;
+	border: solid red 1px;
+	border-radius: 5px;
+	margin-top: 20PX;
+	padding: 15px;
+	box-shadow: 5px 5px;
+}
+
+#totalrating{
+	text-align:right;
+}
+
 #Edit{
 	float: center;
 	border: solid red 1px;
@@ -219,8 +229,8 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
 		padding: 0;
 		width: 1000px;
 		height: 100px;
-		border: 2px solid green
-
+		border: 2px solid green;
+} 
 #mainfooter{
 	width: 100%;
 	clear: both;
@@ -233,4 +243,12 @@ nav > ul > li > a:hover:not(.active){background-color:yellow;}
  	bottom: 0;
  	left: 0;
  	padding: 1rem;
+}
+#naamgebruiker{
+	position:relative;
+	bottom:6px;
+}
+#oordeelgebruiker{
+	height:50px;
+	width:2;
 }
