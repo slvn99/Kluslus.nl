@@ -47,7 +47,4 @@ function saveReactie(text,name){
     var fh = fso.OpenTextFile("Resources/reacties.txt", 8, false, 0);
     fh.WriteLine(name + ' , ' + text );
     fh.Close();
-	
-
-
 }
