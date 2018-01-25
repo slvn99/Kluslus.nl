@@ -43,9 +43,10 @@ counter++;
 saveReactie(text,name);
 }
 
-function saveReactie(text,name){
+//testje
+/*function saveReactie(text,name){
 	var fso = new ActiveXObject("Scripting.FileSystemObject");
     var fh = fso.OpenTextFile("Resources/reacties.txt", 8, false, 0);
     fh.WriteLine(name + ' , ' + text );
     fh.Close();
-}
+}*/ 
